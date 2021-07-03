@@ -1,4 +1,4 @@
-const api = '0d5d1fd837c644ffa20a4e148fd2ad3a';
+// const api = '0d5d1fd837c644ffa20a4e148fd2ad3a';
 
 const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('#location');
@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
     navigator.geolocation.getCurrentPosition((position) => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
-      const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
+      // const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
 
       fetch(base)
         .then((response) => {
